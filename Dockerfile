@@ -20,6 +20,11 @@ RUN mkdir themes/next
 
 RUN curl -L https://api.github.com/repos/theme-next/hexo-theme-next/tarball/v7.8.0 | tar -zxv -C themes/next --strip-components=1
 
-COPY ./_config.yml /hexo/website/_config.yml
+COPY hexo/website/_config.yml /hexo/website/_config.yml
+
+COPY hexo/website/themes/next/_config.yml /hexo/website/themes/next/_config.yml
 
 CMD hexo server -d -p 4000
+
+
+
