@@ -123,28 +123,18 @@ menu:
   category1.1: /categories/category1/category1.1 || fa fa-tags
   category1.1.1: /categories/category1/category1.1/category1.1.1 || fa fa-tags
   Sports: /categories/Sports/ || fa fa-tags
-  类别测试: 
+  类别测试2: 
     default: /categories/ || fa fa-tags
-    CATEGORY1.1: /category1/category1.1 || fa fa-tags
-    category1.1.1: /category1/category1.1/category1.1.1 || fa fa-tags
-    category1.1_2:
-      default: /category1/category1.1 || fa fa-tags
-      category1.1.1: /category1.1.1 || fa fa-tags
-      html: /category1.1.1/index.html || fa fa-tags
-    test:
-      default: /tags || fa fa-flag
-      AAA: / || fa fa-flag
-      CATEGORY1.1: /categories/category1/category1.1 || fa fa-tags
-  category1: 
-    default: /categories/category1/ || fa fa-tags
-    CATEGORY1.1: /categories/category1/category1.1 || fa fa-tags
-    category1.1_x: 
-      default: /categories/category1/category1.1 || fa fa-tags
-      category1.1.1: /categories/category1/category1.1/category1.1.1 || fa fa-tags
-  category2: 
-    default: /categories/category2/ || fa fa-tags
-  # category1: 
-  #   default: /categories/category1/index.md || fa fa-flag
+    category1:
+      default: /category1/ || fa fa-tags
+      category1.1: /category1.1/ || fa fa-tags
+      category1.1.1_html: /category1.1/category1.1.1/hahaha.html || fa fa-tags
+      #    default: 
+      # #   category1.1.1: /category1.1.1 || fa fa-tags
+      # #   category1.1.2: /category1.1.2 || fa fa-tags
+      # #   category1.1.1_html: /category1.1.1/hahaha.html || fa fa-tags
+      category1.2:  /category1.2/ || fa fa-tags
+    category2: /category2/ || fa fa-tags
   test:
     default: /tags || fa fa-flag
     AAA: / || fa fa-flag
@@ -158,7 +148,7 @@ menu:
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 
 # ---------------------------------------------------------------
@@ -829,7 +819,7 @@ note:
 # Tabs tag
 tabs:
   transition:
-    tabs: false
+    tabs: true
     labels: true
 
 # PDF tag
@@ -843,7 +833,7 @@ pdf:
 
 # Mermaid tag
 mermaid:
-  enable: false
+  enable: true
   # Available themes: default | dark | forest | neutral
   theme: forest
 
