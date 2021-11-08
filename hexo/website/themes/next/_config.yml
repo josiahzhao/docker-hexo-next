@@ -119,9 +119,38 @@ darkmode: true
 menu:
   home: / || home
   #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
-  archives: /archives/ || archive
+  tags2: /tags/ || tags
+  category1.1: /categories/category1/category1.1 || fa fa-tags
+  category1.1.1: /categories/category1/category1.1/category1.1.1 || fa fa-tags
+  Sports: /categories/Sports/ || fa fa-tags
+  类别测试: 
+    default: /categories/ || fa fa-tags
+    CATEGORY1.1: /category1/category1.1 || fa fa-tags
+    category1.1.1: /category1/category1.1/category1.1.1 || fa fa-tags
+    category1.1_2:
+      default: /category1/category1.1 || fa fa-tags
+      category1.1.1: /category1.1.1 || fa fa-tags
+      html: /category1.1.1/index.html || fa fa-tags
+    test:
+      default: /tags || fa fa-flag
+      AAA: / || fa fa-flag
+      CATEGORY1.1: /categories/category1/category1.1 || fa fa-tags
+  category1: 
+    default: /categories/category1/ || fa fa-tags
+    CATEGORY1.1: /categories/category1/category1.1 || fa fa-tags
+    category1.1_x: 
+      default: /categories/category1/category1.1 || fa fa-tags
+      category1.1.1: /categories/category1/category1.1/category1.1.1 || fa fa-tags
+  category2: 
+    default: /categories/category2/ || fa fa-tags
+  # category1: 
+  #   default: /categories/category1/index.md || fa fa-flag
+  test:
+    default: /tags || fa fa-flag
+    AAA: / || fa fa-flag
+    CATEGORY1.1: /categories/category1/category1.1 || fa fa-tags
+  # archives: /archives/ || archive
+  tags: /tags/ || fa fa-tags
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -139,8 +168,8 @@ menu_settings:
 
 sidebar:
   # Sidebar Position.
-  position: right
-  #position: right
+  position: left
+  # position: right
 
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
@@ -164,9 +193,9 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /uploads/vivy.png
   # If true, the avatar will be dispalyed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar will be rotated with the cursor.
   rotated: false
 
@@ -178,8 +207,10 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+  GitHub: https://github.com/josiahzhao || github
+  Email: mailto:josiahz@foxmail.com || envelope
+  CSDN: https://blog.csdn.net/josiah_zhao?spm=1000.2115.3001.5343&type=lately || code
+  知乎: https://www.zhihu.com/people/josiah-zhao || zhihu
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -256,29 +287,29 @@ symbols_count_time:
   item_text_total: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Reward (Donate)
 # Front-matter variable (unsupport animation).
 reward_settings:
   # If true, reward will be displayed in every article by default.
-  enable: false
+  enable: true
   animation: false
-  #comment: Donate comment here.
+  comment: test
 
 reward:
-  #wechatpay: /images/wechatpay.png
-  #alipay: /images/alipay.png
-  #paypal: /images/paypal.png
-  #bitcoin: /images/bitcoin.png
+  wechatpay: /uploads/vivy.png
+  alipay: /uploads/vivy.png
+  paypal: /uploads/vivy.png
+  bitcoin: /uploads/vivy.png
 
 # Subscribe through Telegram Channel, Twitter, etc.
 # Usage: `Key: permalink || icon` (Font Awesome)
 follow_me:
-  #Twitter: https://twitter.com/username || twitter
-  #Telegram: https://t.me/channel_name || telegram
-  #WeChat: /images/wechat_channel.jpg || wechat
-  #RSS: /atom.xml || rss
+  Twitter: https://twitter.com/username || twitter
+  Telegram: https://t.me/channel_name || telegram
+  WeChat: /images/wechat_channel.jpg || wechat
+  RSS: /atom.xml || rss
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
