@@ -104,7 +104,7 @@ creative_commons:
 scheme: Gemini
 
 # Dark Mode
-darkmode: true
+darkmode: false
 
 
 # ---------------------------------------------------------------
@@ -136,9 +136,9 @@ menu:
       category1.2:  /category1.2/ || fa fa-tags
     category2: /category2/ || fa fa-tags
   test:
-    default: /tags || fa fa-flag
+    default: /_posts || fa fa-flag
     AAA: / || fa fa-flag
-    CATEGORY1.1: /categories/category1/category1.1 || fa fa-tags
+    CATEGORY1.1: /category1/jojo.md || fa fa-tags
   # archives: /archives/ || archive
   tags: /tags/ || fa fa-tags
   #schedule: /schedule/ || calendar

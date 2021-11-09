@@ -1,0 +1,47 @@
+# Site
+title: Josiah Zhao's Personal Blog111
+subtitle: 'e2e template of hexo with next theme'
+description: 'e2e template of hexo with next theme'
+keywords:
+author: Josiah Zhao
+language: cn
+timezone: 'HK'
+
+url: http://www.mostintelligentape.com
+
+theme: next
+theme_config:
+  scheme: Gemini
+  menu:
+    home: / || home
+    #about: /about/ || user
+    tags2: /tags/ || tags
+    category1.1: /categories/category1/category1.1 || fa fa-tags
+    category1.1.1: /categories/category1/category1.1/category1.1.1 || fa fa-tags
+    Sports: /categories/Sports/ || fa fa-tags
+    类别测试2: 
+      default: /categories/ || fa fa-tags
+      category1:
+        default: /category1/ || fa fa-tags
+        category1.1: /category1.1/ || fa fa-tags
+        category1.1.1_html: /category1.1/category1.1.1/hahaha.html || fa fa-tags
+        #    default: 
+        # #   category1.1.1: /category1.1.1 || fa fa-tags
+        # #   category1.1.2: /category1.1.2 || fa fa-tags
+        # #   category1.1.1_html: /category1.1.1/hahaha.html || fa fa-tags
+        category1.2:  /category1.2/ || fa fa-tags
+      category2: /category2/ || fa fa-tags
+    test:
+      default: /_posts || fa fa-flag
+      AAA: / || fa fa-flag
+      CATEGORY1.1: /category1/jojo.md || fa fa-tags
+    # archives: /archives/ || archive
+    tags: /tags/ || fa fa-tags
+  avatar:
+    # Replace the default image and set the url here.
+    url: /uploads/vivy.png
+  social:
+    GitHub: https://github.com/josiahzhao || github
+    Email: mailto:josiahz@foxmail.com || envelope
+    CSDN: https://blog.csdn.net/josiah_zhao?spm=1000.2115.3001.5343&type=lately || code
+    知乎: https://www.zhihu.com/people/josiah-zhao || zhihu
