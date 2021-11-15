@@ -1,8 +1,8 @@
 # Site
-title: Josiah Zhao's Personal Blog111
-subtitle: 'e2e template of hexo with next theme'
-description: 'e2e template of hexo with next theme'
-keywords:
+title: 标题
+subtitle: 副标题
+description: 描述
+keywords: 关键词
 author: Josiah Zhao
 language: cn
 timezone: 'HK'
@@ -13,12 +13,15 @@ theme: next
 theme_config:
   scheme: Gemini
   menu:
-    home: / || home
+    主页: / || home
+    归档: /archives || archive
     #about: /about/ || user
     tags2: /tags/ || tags
     category1.1: /categories/category1/category1.1 || fa fa-tags
     category1.1.1: /categories/category1/category1.1/category1.1.1 || fa fa-tags
-    Sports: /categories/Sports/ || fa fa-tags
+    Sports: 
+      default: /categories/Sports/ || fa fa-tags
+      Badminton: /categories/Badminton/ || fa fa-tags
     类别测试2: 
       default: /categories/ || fa fa-tags
       category1:
@@ -38,10 +41,10 @@ theme_config:
     # archives: /archives/ || archive
     tags: /tags/ || fa fa-tags
   avatar:
-    # Replace the default image and set the url here.
     url: /uploads/vivy.png
+    rounded: true
   social:
     GitHub: https://github.com/josiahzhao || github
-    Email: mailto:josiahz@foxmail.com || envelope
+    邮箱: mailto:josiahz@foxmail.com || envelope
     CSDN: https://blog.csdn.net/josiah_zhao?spm=1000.2115.3001.5343&type=lately || code
-    知乎: https://www.zhihu.com/people/josiah-zhao || zhihu
+    知乎: https://www.zhihu.com/people/josiah-zhao || book
