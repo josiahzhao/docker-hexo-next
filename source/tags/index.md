@@ -1,6 +1,4 @@
 ---
 title: Tags
+type: tags
 ---
-
-
-aaa

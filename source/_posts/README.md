@@ -1,5 +1,5 @@
 ---
-title: jojo
+title: jojo12
 categories:
 - 自定义分类
 - Badminton
@@ -13,6 +13,7 @@ tags:
 - Shocking
 link: https://github.com/next-theme
 sticky: 100
+date: 2021-11-22 20:46:25
 ---
 # 如何端到端使用hexo
 ## 背景

@@ -17,8 +17,14 @@ RUN npm install
 RUN mkdir themes/next
 RUN curl -L https://api.github.com/repos/theme-next/hexo-theme-next/tarball/v7.8.0 | tar -zxv -C themes/next --strip-components=1
 
+# copy default hexo config and next theme config | 将默认的config配置进行加载
+COPY _config.yml /hexo/website/
+COPY themes/next/_config.yml /hexo/website/themes/next/
+
 # copy example source files | 将样例配置和内容拷贝到网站目录
 COPY source /hexo/website/
+COPY README.md /hexo/website/source/_posts/
+
 
 ENTRYPOINT hexo server -d -p 4000 --config /hexo/website/source/_custom.yml
 

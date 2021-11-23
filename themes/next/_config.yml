@@ -98,10 +98,10 @@ creative_commons:
 # ---------------------------------------------------------------
 
 # Schemes
-# scheme: Muse
-# scheme: Mist
-# scheme: Pisces
-scheme: Gemini
+scheme: Muse
+#scheme: Mist
+#scheme: Pisces
+#scheme: Gemini
 
 # Dark Mode
 darkmode: false
@@ -117,30 +117,11 @@ darkmode: false
 # When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
 # External url should start with http:// or https://
 menu:
-  home: / || home
+  # home: / || home
   #about: /about/ || user
-  tags2: /tags/ || tags
-  category1.1: /categories/category1/category1.1 || fa fa-tags
-  category1.1.1: /categories/category1/category1.1/category1.1.1 || fa fa-tags
-  Sports: /categories/Sports/ || fa fa-tags
-  类别测试2: 
-    default: /categories/ || fa fa-tags
-    category1:
-      default: /category1/ || fa fa-tags
-      category1.1: /category1.1/ || fa fa-tags
-      category1.1.1_html: /category1.1/category1.1.1/hahaha.html || fa fa-tags
-      #    default: 
-      # #   category1.1.1: /category1.1.1 || fa fa-tags
-      # #   category1.1.2: /category1.1.2 || fa fa-tags
-      # #   category1.1.1_html: /category1.1.1/hahaha.html || fa fa-tags
-      category1.2:  /category1.2/ || fa fa-tags
-    category2: /category2/ || fa fa-tags
-  test:
-    default: /_posts || fa fa-flag
-    AAA: / || fa fa-flag
-    CATEGORY1.1: /category1/jojo.md || fa fa-tags
+  #tags: /tags/ || tags
+  #categories: /categories/ || th
   # archives: /archives/ || archive
-  tags: /tags/ || fa fa-tags
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -148,7 +129,7 @@ menu:
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: true
+  badges: false
 
 
 # ---------------------------------------------------------------
@@ -159,7 +140,7 @@ menu_settings:
 sidebar:
   # Sidebar Position.
   position: left
-  # position: right
+  #position: right
 
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
@@ -183,9 +164,9 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: /uploads/vivy.png
+  url: #/images/avatar.gif
   # If true, the avatar will be dispalyed in circle.
-  rounded: true
+  rounded: false
   # If true, the avatar will be rotated with the cursor.
   rotated: false
 
@@ -197,10 +178,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  GitHub: https://github.com/josiahzhao || github
-  Email: mailto:josiahz@foxmail.com || envelope
-  CSDN: https://blog.csdn.net/josiah_zhao?spm=1000.2115.3001.5343&type=lately || code
-  知乎: https://www.zhihu.com/people/josiah-zhao || zhihu
+  #GitHub: https://github.com/yourname || github
+  #E-Mail: mailto:yourname@gmail.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -277,29 +256,29 @@ symbols_count_time:
   item_text_total: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: true
+tag_icon: false
 
 # Reward (Donate)
 # Front-matter variable (unsupport animation).
 reward_settings:
   # If true, reward will be displayed in every article by default.
-  enable: true
+  enable: false
   animation: false
-  comment: test
+  #comment: Donate comment here.
 
 reward:
-  wechatpay: /uploads/vivy.png
-  alipay: /uploads/vivy.png
-  paypal: /uploads/vivy.png
-  bitcoin: /uploads/vivy.png
+  #wechatpay: /images/wechatpay.png
+  #alipay: /images/alipay.png
+  #paypal: /images/paypal.png
+  #bitcoin: /images/bitcoin.png
 
 # Subscribe through Telegram Channel, Twitter, etc.
 # Usage: `Key: permalink || icon` (Font Awesome)
 follow_me:
-  Twitter: https://twitter.com/username || twitter
-  Telegram: https://t.me/channel_name || telegram
-  WeChat: /images/wechat_channel.jpg || wechat
-  RSS: /atom.xml || rss
+  #Twitter: https://twitter.com/username || twitter
+  #Telegram: https://t.me/channel_name || telegram
+  #WeChat: /images/wechat_channel.jpg || wechat
+  #RSS: /atom.xml || rss
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
@@ -819,7 +798,7 @@ note:
 # Tabs tag
 tabs:
   transition:
-    tabs: true
+    tabs: false
     labels: true
 
 # PDF tag
@@ -833,7 +812,7 @@ pdf:
 
 # Mermaid tag
 mermaid:
-  enable: true
+  enable: false
   # Available themes: default | dark | forest | neutral
   theme: forest
 
