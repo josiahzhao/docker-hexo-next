@@ -14,7 +14,7 @@ theme_config:
   scheme: Gemini
   menu:
     主页: / || home
-    文章分类: /categories/自定义分类/ || fa fa-tags
+    文章分类: /categories/说明/ || fa fa-tags
     层级目录: 
       default: /self_define_category/ || fa fa-tags
       类别1:
@@ -24,8 +24,8 @@ theme_config:
       类别2: /category2/ || fa fa-tags
     自动标签: /tags/ || fa fa-tags
     归档: /archives || archive
-    关于: /about/ || user
-    
+    关于: /2021/11/22/about/ || user
+  darkmode: true
   avatar:
     url: /uploads/vivy.png
     rounded: true

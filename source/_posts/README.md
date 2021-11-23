@@ -1,17 +1,10 @@
 ---
-title: jojo12
+title: 如何使用 docker-hexo-next
 categories:
-- 自定义分类
-- Badminton
-- [Sports, Baseball]
-- [MLB, American League, Boston Red Sox]
-- [MLB, American League, New York Yankees]
-- Rivalries
+- 说明
 tags:
-- Injury
-- Fight
-- Shocking
-link: https://github.com/next-theme
+- usage
+link: https://github.com/josiahzhao/docker-hexo-next
 sticky: 100
 date: 2021-11-22 20:46:25
 ---
