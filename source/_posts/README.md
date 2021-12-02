@@ -10,30 +10,34 @@ date: 2021-11-22 20:46:25
 ---
 ## 说明
 本项目提供了一个开箱即用的hexo私人博客解决方案，并且集成了人气最高的next主题。
-通过使用docker镜像，在免去了繁杂的环境配置和安装的同时，也提供了简便的主题配置方式和博客更新、打包方式。
-所有的依赖只有docker（[docker安装方式]())
-## 快速开始
+通过使用docker镜像，在免去了繁杂的环境配置和安装的同时，也提供了简单但灵活的主题配置方式和博客更新打包方式。
+所有的依赖只有[docker](https://www.docker.com/)
+## 快速启动
 只需要执行如下命令，即可启动你自己的hexo博客
 ```
-docker run -p 4000:4000 josiahzhao/docker-hexo-next:latest
+docker run -d -p 3000:4000 -v {你的本地路径}/source:/hexo/website/source josiahzhao/docker-hexo-next:latest
 ```
-如果需要后台运行，也可以执行
-```
-docker run -d -p 4000:4000 josiahzhao/docker-hexo-next:latest
-```
-如果对docker命令不熟悉请参考: 
-## 使用mount进行持久化存储
-如果希望通过宿主机
-## 使用命令获取静态资源文件
+> "{你的本地路径}/source"就是你的博客的数据库目录: 所有的配置、文档都在里面 => 备份和迁移部署只需要对这个目录进行操作即可
 
-## 背景
-## 架构
-## 安装方式
-### 直接安装
-### Docker安装
-## CICD
-## 基础配置方式
-## 主题配置
+随后访问宿主机IP的3000端口即可，如图
+![](https://nginx.mostintelligentape.com/blogimg/202112/run-next.jpeg)
+
+* 说明
+```
+1. "{你的本地路径}/source"请填写本机实际存在的有读写权限的地址
+2. 如果对docker命令不熟悉请参考 [docker运行命令使用方式](https://docs.docker.com/engine/reference/run/)
+3. 启动时，如果"{你的本地路径}/source"是空白的话，则会生成一份模板文件，后续可以直接在模板下进行创作和主题配置调整
+4. 启动时，如果"{你的本地路径}/source"已经有之前编辑的内容，则直接用历史数据启动；所以如果想要迁移部署很简单，将这台机器的"{你的本地路径}/source"拷贝走即可
+```
+## 如何维护文档
+![](https://nginx.mostintelligentape.com/blogimg/202112/source-folder.jpeg)
+
+
+## 如何修改配置
+
+## 如何生成静态网站资源文件
+
+
 
 docker build -t josiahzhao/docker-hexo-next:0.5 .
 

@@ -12,6 +12,7 @@ WORKDIR /hexo
 RUN hexo init website
 WORKDIR /hexo/website
 RUN npm install
+RUN mkdir source_template
 
 # install theme-next | 安装next主题
 RUN mkdir themes/next
@@ -22,11 +23,9 @@ COPY _config.yml /hexo/website/
 COPY themes/next/_config.yml /hexo/website/themes/next/
 
 # copy example source files | 将样例配置和内容拷贝到网站目录
-COPY source /hexo/website/
-COPY README.md /hexo/website/source/_posts/
+COPY source /hexo/website/source_template
 
-
-ENTRYPOINT hexo server -d -p 4000 --config /hexo/website/source/_custom.yml
+ENTRYPOINT ([ -s source/_custom.yml ] || cp -r source_template/* source/) && hexo server -d -p 4000 --config /hexo/website/source/_custom.yml
 
 
 
