@@ -8,7 +8,24 @@ link: https://github.com/josiahzhao/docker-hexo-next
 sticky: 100
 date: 2021-11-22 20:46:25
 ---
-# 如何端到端使用hexo
+## 说明
+本项目提供了一个开箱即用的hexo私人博客解决方案，并且集成了人气最高的next主题。
+通过使用docker镜像，在免去了繁杂的环境配置和安装的同时，也提供了简便的主题配置方式和博客更新、打包方式。
+所有的依赖只有docker（[docker安装方式]())
+## 快速开始
+只需要执行如下命令，即可启动你自己的hexo博客
+```
+docker run -p 4000:4000 josiahzhao/docker-hexo-next:latest
+```
+如果需要后台运行，也可以执行
+```
+docker run -d -p 4000:4000 josiahzhao/docker-hexo-next:latest
+```
+如果对docker命令不熟悉请参考: 
+## 使用mount进行持久化存储
+如果希望通过宿主机
+## 使用命令获取静态资源文件
+
 ## 背景
 ## 架构
 ## 安装方式

@@ -14,7 +14,7 @@ tags:
 link: https://github.com/next-theme
 sticky: 100
 ---
-# 如何端到端使用hexo
+# 如何用Docker部署拥有next主题的Hexo个人博客
 ## 背景
 ## 架构
 ## 安装方式
