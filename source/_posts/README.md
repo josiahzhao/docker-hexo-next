@@ -9,8 +9,16 @@ sticky: 100
 date: 2021-11-22 20:46:25
 ---
 ## 如何使用 docker-hexo-next
+[Github地址](https://github.com/josiahzhao/docker-hexo-next)
+
+[Docker仓库地址](https://hub.docker.com/r/josiahzhao/docker-hexo-next)
+
+[Demo地址](http://nginx.mostintelligentape.com:3000/)
+
 本项目提供了一个开箱即用的hexo私人博客解决方案，并且集成了高人气的next主题。
+
 通过使用docker镜像，在免去了繁杂的环境配置和安装的同时，也提供了简单但灵活的主题配置方式和博客更新打包方式。
+
 所有的依赖只有[docker](https://www.docker.com/)
 ## 快速启动
 只需要执行如下命令，即可启动你自己的hexo博客
@@ -55,4 +63,5 @@ hexo的配置如网站标题，描述，作者，时间格式等基础信息
 同样也存储在的source/_custom.yml，将配置写在theme_config下即可，如[官方文档-主题配置说明](https://hexo.io/docs/configuration#Alternate-Theme-Config)
 
 针对next主题可以支持的修改项，可以参考[next官方文档-主题配置说明](https://theme-next.js.org/docs/theme-settings/)
+
 
