@@ -1,4 +1,10 @@
 ## 如何使用 docker-hexo-next
+[Github地址](https://github.com/josiahzhao/docker-hexo-next)
+
+[Docker仓库地址](https://hub.docker.com/r/josiahzhao/docker-hexo-next)
+
+[Demo地址](http://nginx.mostintelligentape.com:3000/)
+
 本项目提供了一个开箱即用的hexo私人博客解决方案，并且集成了高人气的next主题。
 
 通过使用docker镜像，在免去了繁杂的环境配置和安装的同时，也提供了简单但灵活的主题配置方式和博客更新打包方式。
